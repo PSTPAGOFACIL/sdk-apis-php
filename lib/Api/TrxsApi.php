@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL/ApiClient\Api;
+namespace PSTPAGOFACIL\ApiClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use PSTPAGOFACIL/ApiClient\ApiException;
-use PSTPAGOFACIL/ApiClient\Configuration;
-use PSTPAGOFACIL/ApiClient\HeaderSelector;
-use PSTPAGOFACIL/ApiClient\ObjectSerializer;
+use PSTPAGOFACIL\ApiClient\ApiException;
+use PSTPAGOFACIL\ApiClient\Configuration;
+use PSTPAGOFACIL\ApiClient\HeaderSelector;
+use PSTPAGOFACIL\ApiClient\ObjectSerializer;
 
 /**
  * TrxsApi Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -122,9 +122,9 @@ class TrxsApi
      *
      * @param  float $id id (required)
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \PSTPAGOFACIL/ApiClient\Model\ResponseBodyGetTrx|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400
+     * @return \PSTPAGOFACIL\ApiClient\Model\ResponseBodyGetTrx|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400
      */
     public function trxsIdGet($id)
     {
@@ -139,9 +139,9 @@ class TrxsApi
      *
      * @param  float $id (required)
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \PSTPAGOFACIL/ApiClient\Model\ResponseBodyGetTrx|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PSTPAGOFACIL\ApiClient\Model\ResponseBodyGetTrx|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400, HTTP status code, HTTP response headers (array of strings)
      */
     public function trxsIdGetWithHttpInfo($id)
     {
@@ -178,32 +178,32 @@ class TrxsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\ResponseBodyGetTrx' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\ResponseBodyGetTrx' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\ResponseBodyGetTrx', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\ResponseBodyGetTrx', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse400' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse400' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\PSTPAGOFACIL/ApiClient\Model\ResponseBodyGetTrx';
+            $returnType = '\PSTPAGOFACIL\ApiClient\Model\ResponseBodyGetTrx';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -222,7 +222,7 @@ class TrxsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\ResponseBodyGetTrx',
+                        '\PSTPAGOFACIL\ApiClient\Model\ResponseBodyGetTrx',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -230,7 +230,7 @@ class TrxsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -272,7 +272,7 @@ class TrxsApi
      */
     public function trxsIdGetAsyncWithHttpInfo($id)
     {
-        $returnType = '\PSTPAGOFACIL/ApiClient\Model\ResponseBodyGetTrx';
+        $returnType = '\PSTPAGOFACIL\ApiClient\Model\ResponseBodyGetTrx';
         $request = $this->trxsIdGetRequest($id);
 
         return $this->client
@@ -416,9 +416,9 @@ class TrxsApi
      *
      * @param  float $id_trx id_trx (required)
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \PSTPAGOFACIL/ApiClient\Model\InlineResponse2002|\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400
+     * @return \PSTPAGOFACIL\ApiClient\Model\InlineResponse2002|\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400
      */
     public function trxsIdTrxNullificationGet($id_trx)
     {
@@ -431,9 +431,9 @@ class TrxsApi
      *
      * @param  float $id_trx (required)
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \PSTPAGOFACIL/ApiClient\Model\InlineResponse2002|\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PSTPAGOFACIL\ApiClient\Model\InlineResponse2002|\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400, HTTP status code, HTTP response headers (array of strings)
      */
     public function trxsIdTrxNullificationGetWithHttpInfo($id_trx)
     {
@@ -470,56 +470,56 @@ class TrxsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse2002' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse2002' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2002', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2002', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse400' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse400' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2002';
+            $returnType = '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2002';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -538,7 +538,7 @@ class TrxsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2002',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2002',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -546,7 +546,7 @@ class TrxsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -554,7 +554,7 @@ class TrxsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -562,7 +562,7 @@ class TrxsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -604,7 +604,7 @@ class TrxsApi
      */
     public function trxsIdTrxNullificationGetAsyncWithHttpInfo($id_trx)
     {
-        $returnType = '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2002';
+        $returnType = '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2002';
         $request = $this->trxsIdTrxNullificationGetRequest($id_trx);
 
         return $this->client
@@ -747,11 +747,11 @@ class TrxsApi
      * Operation trxsIdTrxNullificationPost
      *
      * @param  float $id_trx id_trx (required)
-     * @param  \PSTPAGOFACIL/ApiClient\Model\RequestBodyNullification $request_body_nullification request_body_nullification (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\RequestBodyNullification $request_body_nullification request_body_nullification (optional)
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \PSTPAGOFACIL/ApiClient\Model\ResponseBodyNullification|\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400
+     * @return \PSTPAGOFACIL\ApiClient\Model\ResponseBodyNullification|\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400
      */
     public function trxsIdTrxNullificationPost($id_trx, $request_body_nullification = null)
     {
@@ -763,11 +763,11 @@ class TrxsApi
      * Operation trxsIdTrxNullificationPostWithHttpInfo
      *
      * @param  float $id_trx (required)
-     * @param  \PSTPAGOFACIL/ApiClient\Model\RequestBodyNullification $request_body_nullification (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\RequestBodyNullification $request_body_nullification (optional)
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \PSTPAGOFACIL/ApiClient\Model\ResponseBodyNullification|\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PSTPAGOFACIL\ApiClient\Model\ResponseBodyNullification|\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400, HTTP status code, HTTP response headers (array of strings)
      */
     public function trxsIdTrxNullificationPostWithHttpInfo($id_trx, $request_body_nullification = null)
     {
@@ -804,56 +804,56 @@ class TrxsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\ResponseBodyNullification' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\ResponseBodyNullification' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\ResponseBodyNullification', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\ResponseBodyNullification', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse400' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse400' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\PSTPAGOFACIL/ApiClient\Model\ResponseBodyNullification';
+            $returnType = '\PSTPAGOFACIL\ApiClient\Model\ResponseBodyNullification';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -872,7 +872,7 @@ class TrxsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\ResponseBodyNullification',
+                        '\PSTPAGOFACIL\ApiClient\Model\ResponseBodyNullification',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -880,7 +880,7 @@ class TrxsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -888,7 +888,7 @@ class TrxsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -896,7 +896,7 @@ class TrxsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -912,7 +912,7 @@ class TrxsApi
      * 
      *
      * @param  float $id_trx (required)
-     * @param  \PSTPAGOFACIL/ApiClient\Model\RequestBodyNullification $request_body_nullification (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\RequestBodyNullification $request_body_nullification (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -933,14 +933,14 @@ class TrxsApi
      * 
      *
      * @param  float $id_trx (required)
-     * @param  \PSTPAGOFACIL/ApiClient\Model\RequestBodyNullification $request_body_nullification (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\RequestBodyNullification $request_body_nullification (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function trxsIdTrxNullificationPostAsyncWithHttpInfo($id_trx, $request_body_nullification = null)
     {
-        $returnType = '\PSTPAGOFACIL/ApiClient\Model\ResponseBodyNullification';
+        $returnType = '\PSTPAGOFACIL\ApiClient\Model\ResponseBodyNullification';
         $request = $this->trxsIdTrxNullificationPostRequest($id_trx, $request_body_nullification);
 
         return $this->client
@@ -981,7 +981,7 @@ class TrxsApi
      * Create request for operation 'trxsIdTrxNullificationPost'
      *
      * @param  float $id_trx (required)
-     * @param  \PSTPAGOFACIL/ApiClient\Model\RequestBodyNullification $request_body_nullification (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\RequestBodyNullification $request_body_nullification (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1089,9 +1089,9 @@ class TrxsApi
      * @param  float $id_trx id_trx (required)
      * @param  string $verification_token verification_token (required)
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \PSTPAGOFACIL/ApiClient\Model\InlineResponse2003|\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400
+     * @return \PSTPAGOFACIL\ApiClient\Model\InlineResponse2003|\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400
      */
     public function trxsIdTrxNullificationStatusGet($id_trx, $verification_token)
     {
@@ -1105,9 +1105,9 @@ class TrxsApi
      * @param  float $id_trx (required)
      * @param  string $verification_token (required)
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \PSTPAGOFACIL/ApiClient\Model\InlineResponse2003|\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PSTPAGOFACIL\ApiClient\Model\InlineResponse2003|\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400, HTTP status code, HTTP response headers (array of strings)
      */
     public function trxsIdTrxNullificationStatusGetWithHttpInfo($id_trx, $verification_token)
     {
@@ -1144,56 +1144,56 @@ class TrxsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse2003' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse2003' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2003', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2003', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse400' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse400' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2003';
+            $returnType = '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2003';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1212,7 +1212,7 @@ class TrxsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2003',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2003',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1220,7 +1220,7 @@ class TrxsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1228,7 +1228,7 @@ class TrxsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse4011',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse4011',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1236,7 +1236,7 @@ class TrxsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1280,7 +1280,7 @@ class TrxsApi
      */
     public function trxsIdTrxNullificationStatusGetAsyncWithHttpInfo($id_trx, $verification_token)
     {
-        $returnType = '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2003';
+        $returnType = '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2003';
         $request = $this->trxsIdTrxNullificationStatusGetRequest($id_trx, $verification_token);
 
         return $this->client
@@ -1437,11 +1437,11 @@ class TrxsApi
     /**
      * Operation trxsPost
      *
-     * @param  \PSTPAGOFACIL/ApiClient\Model\RequestBodyTrx $request_body_trx request_body_trx (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\RequestBodyTrx $request_body_trx request_body_trx (optional)
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \PSTPAGOFACIL/ApiClient\Model\InlineResponse2001|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400|\PSTPAGOFACIL/ApiClient\Model\InlineResponse409|\PSTPAGOFACIL/ApiClient\Model\InlineResponse500
+     * @return \PSTPAGOFACIL\ApiClient\Model\InlineResponse2001|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400|\PSTPAGOFACIL\ApiClient\Model\InlineResponse409|\PSTPAGOFACIL\ApiClient\Model\InlineResponse500
      */
     public function trxsPost($request_body_trx = null)
     {
@@ -1452,11 +1452,11 @@ class TrxsApi
     /**
      * Operation trxsPostWithHttpInfo
      *
-     * @param  \PSTPAGOFACIL/ApiClient\Model\RequestBodyTrx $request_body_trx (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\RequestBodyTrx $request_body_trx (optional)
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \PSTPAGOFACIL/ApiClient\Model\InlineResponse2001|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400|\PSTPAGOFACIL/ApiClient\Model\InlineResponse409|\PSTPAGOFACIL/ApiClient\Model\InlineResponse500, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PSTPAGOFACIL\ApiClient\Model\InlineResponse2001|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400|\PSTPAGOFACIL\ApiClient\Model\InlineResponse409|\PSTPAGOFACIL\ApiClient\Model\InlineResponse500, HTTP status code, HTTP response headers (array of strings)
      */
     public function trxsPostWithHttpInfo($request_body_trx = null)
     {
@@ -1493,68 +1493,68 @@ class TrxsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse2001' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse2001' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2001', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2001', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse400' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse400' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse400' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse400' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 409:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse409' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse409' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse409', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse409', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 500:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse500' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse500' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse500', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse500', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2001';
+            $returnType = '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2001';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1573,7 +1573,7 @@ class TrxsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2001',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2001',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1581,7 +1581,7 @@ class TrxsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1589,7 +1589,7 @@ class TrxsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1597,7 +1597,7 @@ class TrxsApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse409',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse409',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1605,7 +1605,7 @@ class TrxsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse500',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse500',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1620,7 +1620,7 @@ class TrxsApi
      *
      * 
      *
-     * @param  \PSTPAGOFACIL/ApiClient\Model\RequestBodyTrx $request_body_trx (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\RequestBodyTrx $request_body_trx (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1640,14 +1640,14 @@ class TrxsApi
      *
      * 
      *
-     * @param  \PSTPAGOFACIL/ApiClient\Model\RequestBodyTrx $request_body_trx (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\RequestBodyTrx $request_body_trx (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function trxsPostAsyncWithHttpInfo($request_body_trx = null)
     {
-        $returnType = '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2001';
+        $returnType = '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2001';
         $request = $this->trxsPostRequest($request_body_trx);
 
         return $this->client
@@ -1687,7 +1687,7 @@ class TrxsApi
     /**
      * Create request for operation 'trxsPost'
      *
-     * @param  \PSTPAGOFACIL/ApiClient\Model\RequestBodyTrx $request_body_trx (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\RequestBodyTrx $request_body_trx (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

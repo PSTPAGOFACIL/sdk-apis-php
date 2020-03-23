@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL/ApiClient\Model;
+namespace PSTPAGOFACIL\ApiClient\Model;
 
 use \ArrayAccess;
-use \PSTPAGOFACIL/ApiClient\ObjectSerializer;
+use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
 
 /**
  * InlineResponse2001 Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,7 +58,7 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'status_code' => 'float',
-        'body' => '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2001Body'
+        'body' => '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2001Body'
     ];
 
     /**
@@ -237,7 +237,7 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
     /**
      * Gets body
      *
-     * @return \PSTPAGOFACIL/ApiClient\Model\InlineResponse2001Body|null
+     * @return \PSTPAGOFACIL\ApiClient\Model\InlineResponse2001Body|null
      */
     public function getBody()
     {
@@ -247,7 +247,7 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
     /**
      * Sets body
      *
-     * @param \PSTPAGOFACIL/ApiClient\Model\InlineResponse2001Body|null $body body
+     * @param \PSTPAGOFACIL\ApiClient\Model\InlineResponse2001Body|null $body body
      *
      * @return $this
      */

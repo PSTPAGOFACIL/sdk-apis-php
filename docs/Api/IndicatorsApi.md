@@ -1,4 +1,4 @@
-# PSTPAGOFACIL/ApiClient\IndicatorsApi
+# PSTPAGOFACIL\ApiClient\IndicatorsApi
 
 All URIs are relative to *https://apis.pgf.cl*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## indicatorsRemittancesGet
 
-> \PSTPAGOFACIL/ApiClient\Model\ResponseBodyRemittances indicatorsRemittancesGet($id_user, $id_trx, $available_balance, $remittance_by_date, $future_remittances)
+> \PSTPAGOFACIL\ApiClient\Model\ResponseBodyRemittances indicatorsRemittancesGet($id_user, $id_trx, $available_balance, $remittance_by_date, $future_remittances)
 
 Obtiene los datos de los abonos (remittances) realizados en una fecha específica y los futuros, además del saldo disponible
 
@@ -24,10 +24,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (JWT) authorization: JWTToken
-$config = PSTPAGOFACIL/ApiClient\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = PSTPAGOFACIL\ApiClient\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new PSTPAGOFACIL/ApiClient\Api\IndicatorsApi(
+$apiInstance = new PSTPAGOFACIL\ApiClient\Api\IndicatorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\PSTPAGOFACIL/ApiClient\Model\ResponseBodyRemittances**](../Model/ResponseBodyRemittances.md)
+[**\PSTPAGOFACIL\ApiClient\Model\ResponseBodyRemittances**](../Model/ResponseBodyRemittances.md)
 
 ### Authorization
 

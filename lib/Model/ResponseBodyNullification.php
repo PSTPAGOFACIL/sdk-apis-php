@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL/ApiClient\Model;
+namespace PSTPAGOFACIL\ApiClient\Model;
 
 use \ArrayAccess;
-use \PSTPAGOFACIL/ApiClient\ObjectSerializer;
+use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
 
 /**
  * ResponseBodyNullification Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,7 +58,7 @@ class ResponseBodyNullification implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'message' => 'string',
-        'data' => '\PSTPAGOFACIL/ApiClient\Model\ResponseBodyNullificationData'
+        'data' => '\PSTPAGOFACIL\ApiClient\Model\ResponseBodyNullificationData'
     ];
 
     /**
@@ -237,7 +237,7 @@ class ResponseBodyNullification implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \PSTPAGOFACIL/ApiClient\Model\ResponseBodyNullificationData|null
+     * @return \PSTPAGOFACIL\ApiClient\Model\ResponseBodyNullificationData|null
      */
     public function getData()
     {
@@ -247,7 +247,7 @@ class ResponseBodyNullification implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \PSTPAGOFACIL/ApiClient\Model\ResponseBodyNullificationData|null $data data
+     * @param \PSTPAGOFACIL\ApiClient\Model\ResponseBodyNullificationData|null $data data
      *
      * @return $this
      */

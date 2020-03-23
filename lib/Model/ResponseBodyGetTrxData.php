@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL/ApiClient\Model;
+namespace PSTPAGOFACIL\ApiClient\Model;
 
 use \ArrayAccess;
-use \PSTPAGOFACIL/ApiClient\ObjectSerializer;
+use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
 
 /**
  * ResponseBodyGetTrxData Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -78,7 +78,7 @@ class ResponseBodyGetTrxData implements ModelInterface, ArrayAccess
         'responce_code' => 'int',
         'vci' => 'string',
         'abonos' => 'string[]',
-        'status' => '\PSTPAGOFACIL/ApiClient\Model\Status'
+        'status' => '\PSTPAGOFACIL\ApiClient\Model\Status'
     ];
 
     /**
@@ -846,7 +846,7 @@ class ResponseBodyGetTrxData implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \PSTPAGOFACIL/ApiClient\Model\Status|null
+     * @return \PSTPAGOFACIL\ApiClient\Model\Status|null
      */
     public function getStatus()
     {
@@ -856,7 +856,7 @@ class ResponseBodyGetTrxData implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \PSTPAGOFACIL/ApiClient\Model\Status|null $status status
+     * @param \PSTPAGOFACIL\ApiClient\Model\Status|null $status status
      *
      * @return $this
      */

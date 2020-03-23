@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL/ApiClient\Model;
+namespace PSTPAGOFACIL\ApiClient\Model;
 
 use \ArrayAccess;
-use \PSTPAGOFACIL/ApiClient\ObjectSerializer;
+use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
 
 /**
  * InlineResponse2005 Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -57,7 +57,7 @@ class InlineResponse2005 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'types' => '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2005Types[]'
+        'types' => '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2005Types[]'
     ];
 
     /**
@@ -207,7 +207,7 @@ class InlineResponse2005 implements ModelInterface, ArrayAccess
     /**
      * Gets types
      *
-     * @return \PSTPAGOFACIL/ApiClient\Model\InlineResponse2005Types[]|null
+     * @return \PSTPAGOFACIL\ApiClient\Model\InlineResponse2005Types[]|null
      */
     public function getTypes()
     {
@@ -217,7 +217,7 @@ class InlineResponse2005 implements ModelInterface, ArrayAccess
     /**
      * Sets types
      *
-     * @param \PSTPAGOFACIL/ApiClient\Model\InlineResponse2005Types[]|null $types types
+     * @param \PSTPAGOFACIL\ApiClient\Model\InlineResponse2005Types[]|null $types types
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL/ApiClient\Model;
+namespace PSTPAGOFACIL\ApiClient\Model;
 
 use \ArrayAccess;
-use \PSTPAGOFACIL/ApiClient\ObjectSerializer;
+use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
 
 /**
  * InlineResponse404 Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL/ApiClient\Api;
+namespace PSTPAGOFACIL\ApiClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use PSTPAGOFACIL/ApiClient\ApiException;
-use PSTPAGOFACIL/ApiClient\Configuration;
-use PSTPAGOFACIL/ApiClient\HeaderSelector;
-use PSTPAGOFACIL/ApiClient\ObjectSerializer;
+use PSTPAGOFACIL\ApiClient\ApiException;
+use PSTPAGOFACIL\ApiClient\Configuration;
+use PSTPAGOFACIL\ApiClient\HeaderSelector;
+use PSTPAGOFACIL\ApiClient\ObjectSerializer;
 
 /**
  * RemittancesApi Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -121,9 +121,9 @@ class RemittancesApi
      * @param  string $email Email a consultar (required)
      * @param  \DateTime $date Fecha de consulta año-mes-dia &lt;br&gt; Ej: 2019-12-31 (required)
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \PSTPAGOFACIL/ApiClient\Model\InlineResponse200|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400|\PSTPAGOFACIL/ApiClient\Model\InlineResponse500
+     * @return \PSTPAGOFACIL\ApiClient\Model\InlineResponse200|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400|\PSTPAGOFACIL\ApiClient\Model\InlineResponse500
      */
     public function remittancesConciliationGet($email, $date)
     {
@@ -137,9 +137,9 @@ class RemittancesApi
      * @param  string $email Email a consultar (required)
      * @param  \DateTime $date Fecha de consulta año-mes-dia &lt;br&gt; Ej: 2019-12-31 (required)
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \PSTPAGOFACIL/ApiClient\Model\InlineResponse200|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400|\PSTPAGOFACIL/ApiClient\Model\InlineResponse500, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PSTPAGOFACIL\ApiClient\Model\InlineResponse200|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400|\PSTPAGOFACIL\ApiClient\Model\InlineResponse500, HTTP status code, HTTP response headers (array of strings)
      */
     public function remittancesConciliationGetWithHttpInfo($email, $date)
     {
@@ -176,44 +176,44 @@ class RemittancesApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse200' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse200' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse200', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse200', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse400' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse400' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 500:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse500' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse500' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse500', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse500', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\PSTPAGOFACIL/ApiClient\Model\InlineResponse200';
+            $returnType = '\PSTPAGOFACIL\ApiClient\Model\InlineResponse200';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -232,7 +232,7 @@ class RemittancesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse200',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse200',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -240,7 +240,7 @@ class RemittancesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -248,7 +248,7 @@ class RemittancesApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse500',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse500',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -292,7 +292,7 @@ class RemittancesApi
      */
     public function remittancesConciliationGetAsyncWithHttpInfo($email, $date)
     {
-        $returnType = '\PSTPAGOFACIL/ApiClient\Model\InlineResponse200';
+        $returnType = '\PSTPAGOFACIL\ApiClient\Model\InlineResponse200';
         $request = $this->remittancesConciliationGetRequest($email, $date);
 
         return $this->client

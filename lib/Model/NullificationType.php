@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,15 +27,15 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL/ApiClient\Model;
-use \PSTPAGOFACIL/ApiClient\ObjectSerializer;
+namespace PSTPAGOFACIL\ApiClient\Model;
+use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
 
 /**
  * NullificationType Class Doc Comment
  *
  * @category Class
  * @description Tipo de anulación
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

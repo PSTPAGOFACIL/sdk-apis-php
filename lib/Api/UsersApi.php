@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL/ApiClient\Api;
+namespace PSTPAGOFACIL\ApiClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use PSTPAGOFACIL/ApiClient\ApiException;
-use PSTPAGOFACIL/ApiClient\Configuration;
-use PSTPAGOFACIL/ApiClient\HeaderSelector;
-use PSTPAGOFACIL/ApiClient\ObjectSerializer;
+use PSTPAGOFACIL\ApiClient\ApiException;
+use PSTPAGOFACIL\ApiClient\Configuration;
+use PSTPAGOFACIL\ApiClient\HeaderSelector;
+use PSTPAGOFACIL\ApiClient\ObjectSerializer;
 
 /**
  * UsersApi Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -121,9 +121,9 @@ class UsersApi
      * Obtener informacion del usuario.
      *
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \PSTPAGOFACIL/ApiClient\Model\InlineResponse2006|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400|\PSTPAGOFACIL/ApiClient\Model\InlineResponse4012
+     * @return \PSTPAGOFACIL\ApiClient\Model\InlineResponse2006|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400|\PSTPAGOFACIL\ApiClient\Model\InlineResponse4012
      */
     public function usersGet()
     {
@@ -137,9 +137,9 @@ class UsersApi
      * Obtener informacion del usuario.
      *
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \PSTPAGOFACIL/ApiClient\Model\InlineResponse2006|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400|\PSTPAGOFACIL/ApiClient\Model\InlineResponse4012, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PSTPAGOFACIL\ApiClient\Model\InlineResponse2006|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400|\PSTPAGOFACIL\ApiClient\Model\InlineResponse4012, HTTP status code, HTTP response headers (array of strings)
      */
     public function usersGetWithHttpInfo()
     {
@@ -176,44 +176,44 @@ class UsersApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse2006' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse2006' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2006', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2006', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse400' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse400' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse4012' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse4012' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse4012', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse4012', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2006';
+            $returnType = '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2006';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -232,7 +232,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2006',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2006',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -240,7 +240,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -248,7 +248,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse4012',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse4012',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -288,7 +288,7 @@ class UsersApi
      */
     public function usersGetAsyncWithHttpInfo()
     {
-        $returnType = '\PSTPAGOFACIL/ApiClient\Model\InlineResponse2006';
+        $returnType = '\PSTPAGOFACIL\ApiClient\Model\InlineResponse2006';
         $request = $this->usersGetRequest();
 
         return $this->client

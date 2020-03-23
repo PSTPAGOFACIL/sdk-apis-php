@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL/ApiClient\Model;
+namespace PSTPAGOFACIL\ApiClient\Model;
 
 use \ArrayAccess;
-use \PSTPAGOFACIL/ApiClient\ObjectSerializer;
+use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
 
 /**
  * RequestBodyTrx Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -68,9 +68,9 @@ class RequestBodyTrx implements ModelInterface, ArrayAccess
         'x_shop_country' => 'string',
         'x_session_id' => 'string',
         'x_products' => 'object[]',
-        'x_billing_details' => '\PSTPAGOFACIL/ApiClient\Model\BillingDetails',
-        'x_shippment' => '\PSTPAGOFACIL/ApiClient\Model\Shippment',
-        'x_document' => '\PSTPAGOFACIL/ApiClient\Model\Document',
+        'x_billing_details' => '\PSTPAGOFACIL\ApiClient\Model\BillingDetails',
+        'x_shippment' => '\PSTPAGOFACIL\ApiClient\Model\Shippment',
+        'x_document' => '\PSTPAGOFACIL\ApiClient\Model\Document',
         'x_signature' => 'string'
     ];
 
@@ -681,7 +681,7 @@ class RequestBodyTrx implements ModelInterface, ArrayAccess
     /**
      * Gets x_billing_details
      *
-     * @return \PSTPAGOFACIL/ApiClient\Model\BillingDetails|null
+     * @return \PSTPAGOFACIL\ApiClient\Model\BillingDetails|null
      */
     public function getXBillingDetails()
     {
@@ -691,7 +691,7 @@ class RequestBodyTrx implements ModelInterface, ArrayAccess
     /**
      * Sets x_billing_details
      *
-     * @param \PSTPAGOFACIL/ApiClient\Model\BillingDetails|null $x_billing_details x_billing_details
+     * @param \PSTPAGOFACIL\ApiClient\Model\BillingDetails|null $x_billing_details x_billing_details
      *
      * @return $this
      */
@@ -705,7 +705,7 @@ class RequestBodyTrx implements ModelInterface, ArrayAccess
     /**
      * Gets x_shippment
      *
-     * @return \PSTPAGOFACIL/ApiClient\Model\Shippment|null
+     * @return \PSTPAGOFACIL\ApiClient\Model\Shippment|null
      */
     public function getXShippment()
     {
@@ -715,7 +715,7 @@ class RequestBodyTrx implements ModelInterface, ArrayAccess
     /**
      * Sets x_shippment
      *
-     * @param \PSTPAGOFACIL/ApiClient\Model\Shippment|null $x_shippment x_shippment
+     * @param \PSTPAGOFACIL\ApiClient\Model\Shippment|null $x_shippment x_shippment
      *
      * @return $this
      */
@@ -729,7 +729,7 @@ class RequestBodyTrx implements ModelInterface, ArrayAccess
     /**
      * Gets x_document
      *
-     * @return \PSTPAGOFACIL/ApiClient\Model\Document|null
+     * @return \PSTPAGOFACIL\ApiClient\Model\Document|null
      */
     public function getXDocument()
     {
@@ -739,7 +739,7 @@ class RequestBodyTrx implements ModelInterface, ArrayAccess
     /**
      * Sets x_document
      *
-     * @param \PSTPAGOFACIL/ApiClient\Model\Document|null $x_document x_document
+     * @param \PSTPAGOFACIL\ApiClient\Model\Document|null $x_document x_document
      *
      * @return $this
      */

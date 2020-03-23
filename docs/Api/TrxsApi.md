@@ -1,4 +1,4 @@
-# PSTPAGOFACIL/ApiClient\TrxsApi
+# PSTPAGOFACIL\ApiClient\TrxsApi
 
 All URIs are relative to *https://apis.pgf.cl*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## trxsIdGet
 
-> \PSTPAGOFACIL/ApiClient\Model\ResponseBodyGetTrx trxsIdGet($id)
+> \PSTPAGOFACIL\ApiClient\Model\ResponseBodyGetTrx trxsIdGet($id)
 
 Obtiene la informacion de la transacción exitosa, asociada a un id
 
@@ -28,10 +28,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (JWT) authorization: JWTToken
-$config = PSTPAGOFACIL/ApiClient\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = PSTPAGOFACIL\ApiClient\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new PSTPAGOFACIL/ApiClient\Api\TrxsApi(
+$apiInstance = new PSTPAGOFACIL\ApiClient\Api\TrxsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\PSTPAGOFACIL/ApiClient\Model\ResponseBodyGetTrx**](../Model/ResponseBodyGetTrx.md)
+[**\PSTPAGOFACIL\ApiClient\Model\ResponseBodyGetTrx**](../Model/ResponseBodyGetTrx.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 ## trxsIdTrxNullificationGet
 
-> \PSTPAGOFACIL/ApiClient\Model\InlineResponse2002 trxsIdTrxNullificationGet($id_trx)
+> \PSTPAGOFACIL\ApiClient\Model\InlineResponse2002 trxsIdTrxNullificationGet($id_trx)
 
 
 
@@ -89,10 +89,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (JWT) authorization: JWTToken
-$config = PSTPAGOFACIL/ApiClient\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = PSTPAGOFACIL\ApiClient\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new PSTPAGOFACIL/ApiClient\Api\TrxsApi(
+$apiInstance = new PSTPAGOFACIL\ApiClient\Api\TrxsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\PSTPAGOFACIL/ApiClient\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\PSTPAGOFACIL\ApiClient\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
 
 ### Authorization
 
@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 
 ## trxsIdTrxNullificationPost
 
-> \PSTPAGOFACIL/ApiClient\Model\ResponseBodyNullification trxsIdTrxNullificationPost($id_trx, $request_body_nullification)
+> \PSTPAGOFACIL\ApiClient\Model\ResponseBodyNullification trxsIdTrxNullificationPost($id_trx, $request_body_nullification)
 
 
 
@@ -150,17 +150,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (JWT) authorization: JWTToken
-$config = PSTPAGOFACIL/ApiClient\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = PSTPAGOFACIL\ApiClient\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new PSTPAGOFACIL/ApiClient\Api\TrxsApi(
+$apiInstance = new PSTPAGOFACIL\ApiClient\Api\TrxsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id_trx = 3.4; // float | 
-$request_body_nullification = new \PSTPAGOFACIL/ApiClient\Model\RequestBodyNullification(); // \PSTPAGOFACIL/ApiClient\Model\RequestBodyNullification | 
+$request_body_nullification = new \PSTPAGOFACIL\ApiClient\Model\RequestBodyNullification(); // \PSTPAGOFACIL\ApiClient\Model\RequestBodyNullification | 
 
 try {
     $result = $apiInstance->trxsIdTrxNullificationPost($id_trx, $request_body_nullification);
@@ -177,11 +177,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id_trx** | **float**|  |
- **request_body_nullification** | [**\PSTPAGOFACIL/ApiClient\Model\RequestBodyNullification**](../Model/RequestBodyNullification.md)|  | [optional]
+ **request_body_nullification** | [**\PSTPAGOFACIL\ApiClient\Model\RequestBodyNullification**](../Model/RequestBodyNullification.md)|  | [optional]
 
 ### Return type
 
-[**\PSTPAGOFACIL/ApiClient\Model\ResponseBodyNullification**](../Model/ResponseBodyNullification.md)
+[**\PSTPAGOFACIL\ApiClient\Model\ResponseBodyNullification**](../Model/ResponseBodyNullification.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ Name | Type | Description  | Notes
 
 ## trxsIdTrxNullificationStatusGet
 
-> \PSTPAGOFACIL/ApiClient\Model\InlineResponse2003 trxsIdTrxNullificationStatusGet($id_trx, $verification_token)
+> \PSTPAGOFACIL\ApiClient\Model\InlineResponse2003 trxsIdTrxNullificationStatusGet($id_trx, $verification_token)
 
 
 
@@ -213,10 +213,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (JWT) authorization: JWTToken
-$config = PSTPAGOFACIL/ApiClient\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = PSTPAGOFACIL\ApiClient\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new PSTPAGOFACIL/ApiClient\Api\TrxsApi(
+$apiInstance = new PSTPAGOFACIL\ApiClient\Api\TrxsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\PSTPAGOFACIL/ApiClient\Model\InlineResponse2003**](../Model/InlineResponse2003.md)
+[**\PSTPAGOFACIL\ApiClient\Model\InlineResponse2003**](../Model/InlineResponse2003.md)
 
 ### Authorization
 
@@ -262,7 +262,7 @@ Name | Type | Description  | Notes
 
 ## trxsPost
 
-> \PSTPAGOFACIL/ApiClient\Model\InlineResponse2001 trxsPost($request_body_trx)
+> \PSTPAGOFACIL\ApiClient\Model\InlineResponse2001 trxsPost($request_body_trx)
 
 
 
@@ -275,12 +275,12 @@ Crea una transaccion en estado pendiente. <br> La respuesta tiene distintos mét
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new PSTPAGOFACIL/ApiClient\Api\TrxsApi(
+$apiInstance = new PSTPAGOFACIL\ApiClient\Api\TrxsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$request_body_trx = new \PSTPAGOFACIL/ApiClient\Model\RequestBodyTrx(); // \PSTPAGOFACIL/ApiClient\Model\RequestBodyTrx | 
+$request_body_trx = new \PSTPAGOFACIL\ApiClient\Model\RequestBodyTrx(); // \PSTPAGOFACIL\ApiClient\Model\RequestBodyTrx | 
 
 try {
     $result = $apiInstance->trxsPost($request_body_trx);
@@ -296,11 +296,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request_body_trx** | [**\PSTPAGOFACIL/ApiClient\Model\RequestBodyTrx**](../Model/RequestBodyTrx.md)|  | [optional]
+ **request_body_trx** | [**\PSTPAGOFACIL\ApiClient\Model\RequestBodyTrx**](../Model/RequestBodyTrx.md)|  | [optional]
 
 ### Return type
 
-[**\PSTPAGOFACIL/ApiClient\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\PSTPAGOFACIL\ApiClient\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
 
 ### Authorization
 

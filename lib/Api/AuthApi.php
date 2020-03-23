@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL/ApiClient\Api;
+namespace PSTPAGOFACIL\ApiClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use PSTPAGOFACIL/ApiClient\ApiException;
-use PSTPAGOFACIL/ApiClient\Configuration;
-use PSTPAGOFACIL/ApiClient\HeaderSelector;
-use PSTPAGOFACIL/ApiClient\ObjectSerializer;
+use PSTPAGOFACIL\ApiClient\ApiException;
+use PSTPAGOFACIL\ApiClient\Configuration;
+use PSTPAGOFACIL\ApiClient\HeaderSelector;
+use PSTPAGOFACIL\ApiClient\ObjectSerializer;
 
 /**
  * AuthApi Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -120,11 +120,11 @@ class AuthApi
      *
      * Autentificación con usuario y clave.
      *
-     * @param  \PSTPAGOFACIL/ApiClient\Model\LoginBody $login_body login_body (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\LoginBody $login_body login_body (optional)
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \PSTPAGOFACIL/ApiClient\Model\LoginResponse|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400|\PSTPAGOFACIL/ApiClient\Model\InlineResponse500|\PSTPAGOFACIL/ApiClient\Model\InlineResponse401
+     * @return \PSTPAGOFACIL\ApiClient\Model\LoginResponse|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400|\PSTPAGOFACIL\ApiClient\Model\InlineResponse500|\PSTPAGOFACIL\ApiClient\Model\InlineResponse401
      */
     public function usersLoginPost($login_body = null)
     {
@@ -137,11 +137,11 @@ class AuthApi
      *
      * Autentificación con usuario y clave.
      *
-     * @param  \PSTPAGOFACIL/ApiClient\Model\LoginBody $login_body (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\LoginBody $login_body (optional)
      *
-     * @throws \PSTPAGOFACIL/ApiClient\ApiException on non-2xx response
+     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \PSTPAGOFACIL/ApiClient\Model\LoginResponse|\PSTPAGOFACIL/ApiClient\Model\InlineResponse400|\PSTPAGOFACIL/ApiClient\Model\InlineResponse500|\PSTPAGOFACIL/ApiClient\Model\InlineResponse401, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PSTPAGOFACIL\ApiClient\Model\LoginResponse|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400|\PSTPAGOFACIL\ApiClient\Model\InlineResponse500|\PSTPAGOFACIL\ApiClient\Model\InlineResponse401, HTTP status code, HTTP response headers (array of strings)
      */
     public function usersLoginPostWithHttpInfo($login_body = null)
     {
@@ -178,56 +178,56 @@ class AuthApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\LoginResponse' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\LoginResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\LoginResponse', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\LoginResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse400' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse400' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 500:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse500' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse500' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse500', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse500', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\PSTPAGOFACIL/ApiClient\Model\InlineResponse401' === '\SplFileObject') {
+                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse401' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL/ApiClient\Model\InlineResponse401', []),
+                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse401', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\PSTPAGOFACIL/ApiClient\Model\LoginResponse';
+            $returnType = '\PSTPAGOFACIL\ApiClient\Model\LoginResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -246,7 +246,7 @@ class AuthApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\LoginResponse',
+                        '\PSTPAGOFACIL\ApiClient\Model\LoginResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -254,7 +254,7 @@ class AuthApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse400',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -262,7 +262,7 @@ class AuthApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse500',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse500',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -270,7 +270,7 @@ class AuthApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL/ApiClient\Model\InlineResponse401',
+                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse401',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -285,7 +285,7 @@ class AuthApi
      *
      * Autentificación con usuario y clave.
      *
-     * @param  \PSTPAGOFACIL/ApiClient\Model\LoginBody $login_body (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\LoginBody $login_body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -305,14 +305,14 @@ class AuthApi
      *
      * Autentificación con usuario y clave.
      *
-     * @param  \PSTPAGOFACIL/ApiClient\Model\LoginBody $login_body (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\LoginBody $login_body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function usersLoginPostAsyncWithHttpInfo($login_body = null)
     {
-        $returnType = '\PSTPAGOFACIL/ApiClient\Model\LoginResponse';
+        $returnType = '\PSTPAGOFACIL\ApiClient\Model\LoginResponse';
         $request = $this->usersLoginPostRequest($login_body);
 
         return $this->client
@@ -352,7 +352,7 @@ class AuthApi
     /**
      * Create request for operation 'usersLoginPost'
      *
-     * @param  \PSTPAGOFACIL/ApiClient\Model\LoginBody $login_body (optional)
+     * @param  \PSTPAGOFACIL\ApiClient\Model\LoginBody $login_body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

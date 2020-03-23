@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL/ApiClient\Model;
+namespace PSTPAGOFACIL\ApiClient\Model;
 
 use \ArrayAccess;
-use \PSTPAGOFACIL/ApiClient\ObjectSerializer;
+use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
 
 /**
  * InlineResponse2003Data Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -57,7 +57,7 @@ class InlineResponse2003Data implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'status' => '\PSTPAGOFACIL/ApiClient\Model\NullificationStatus'
+        'status' => '\PSTPAGOFACIL\ApiClient\Model\NullificationStatus'
     ];
 
     /**
@@ -207,7 +207,7 @@ class InlineResponse2003Data implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \PSTPAGOFACIL/ApiClient\Model\NullificationStatus|null
+     * @return \PSTPAGOFACIL\ApiClient\Model\NullificationStatus|null
      */
     public function getStatus()
     {
@@ -217,7 +217,7 @@ class InlineResponse2003Data implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \PSTPAGOFACIL/ApiClient\Model\NullificationStatus|null $status status
+     * @param \PSTPAGOFACIL\ApiClient\Model\NullificationStatus|null $status status
      *
      * @return $this
      */

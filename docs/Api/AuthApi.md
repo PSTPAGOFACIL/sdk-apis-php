@@ -1,4 +1,4 @@
-# PSTPAGOFACIL/ApiClient\AuthApi
+# PSTPAGOFACIL\ApiClient\AuthApi
 
 All URIs are relative to *https://apis.pgf.cl*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## usersLoginPost
 
-> \PSTPAGOFACIL/ApiClient\Model\LoginResponse usersLoginPost($login_body)
+> \PSTPAGOFACIL\ApiClient\Model\LoginResponse usersLoginPost($login_body)
 
 Autentificación con usuario y clave.
 
@@ -23,12 +23,12 @@ Retorna un token con el que se deben realizar las llamadas al resto de los endpo
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new PSTPAGOFACIL/ApiClient\Api\AuthApi(
+$apiInstance = new PSTPAGOFACIL\ApiClient\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$login_body = new \PSTPAGOFACIL/ApiClient\Model\LoginBody(); // \PSTPAGOFACIL/ApiClient\Model\LoginBody | 
+$login_body = new \PSTPAGOFACIL\ApiClient\Model\LoginBody(); // \PSTPAGOFACIL\ApiClient\Model\LoginBody | 
 
 try {
     $result = $apiInstance->usersLoginPost($login_body);
@@ -44,11 +44,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **login_body** | [**\PSTPAGOFACIL/ApiClient\Model\LoginBody**](../Model/LoginBody.md)|  | [optional]
+ **login_body** | [**\PSTPAGOFACIL\ApiClient\Model\LoginBody**](../Model/LoginBody.md)|  | [optional]
 
 ### Return type
 
-[**\PSTPAGOFACIL/ApiClient\Model\LoginResponse**](../Model/LoginResponse.md)
+[**\PSTPAGOFACIL\ApiClient\Model\LoginResponse**](../Model/LoginResponse.md)
 
 ### Authorization
 

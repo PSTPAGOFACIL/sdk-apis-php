@@ -1,4 +1,4 @@
-# PSTPAGOFACIL/ApiClient\RemittancesApi
+# PSTPAGOFACIL\ApiClient\RemittancesApi
 
 All URIs are relative to *https://apis.pgf.cl*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## remittancesConciliationGet
 
-> \PSTPAGOFACIL/ApiClient\Model\InlineResponse200 remittancesConciliationGet($email, $date)
+> \PSTPAGOFACIL\ApiClient\Model\InlineResponse200 remittancesConciliationGet($email, $date)
 
 
 
@@ -24,10 +24,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (JWT) authorization: JWTToken
-$config = PSTPAGOFACIL/ApiClient\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = PSTPAGOFACIL\ApiClient\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new PSTPAGOFACIL/ApiClient\Api\RemittancesApi(
+$apiInstance = new PSTPAGOFACIL\ApiClient\Api\RemittancesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\PSTPAGOFACIL/ApiClient\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\PSTPAGOFACIL\ApiClient\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

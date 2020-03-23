@@ -1,4 +1,4 @@
-# PSTPAGOFACIL/ApiClient\PaymentsApi
+# PSTPAGOFACIL\ApiClient\PaymentsApi
 
 All URIs are relative to *https://apis.pgf.cl*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## paymentsGet
 
-> \PSTPAGOFACIL/ApiClient\Model\InlineResponse2005 paymentsGet($authorization)
+> \PSTPAGOFACIL\ApiClient\Model\InlineResponse2005 paymentsGet($authorization)
 
 
 
@@ -23,7 +23,7 @@ Obtiene los medios de pago disponible
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new PSTPAGOFACIL/ApiClient\Api\PaymentsApi(
+$apiInstance = new PSTPAGOFACIL\ApiClient\Api\PaymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\PSTPAGOFACIL/ApiClient\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
+[**\PSTPAGOFACIL\ApiClient\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
 
 ### Authorization
 

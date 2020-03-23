@@ -8,8 +8,14 @@
         "rest",
         "api"
     ],
-    "homepage": "https://pagofacil.cl",
+    "homepage": "https://openapi-generator.tech",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "OpenAPI-Generator contributors",
+            "homepage": "https://openapi-generator.tech"
+        }
+    ],
     "require": {
         "php": ">=7.1",
         "ext-curl": "*",
@@ -23,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "~2.12"
     },
     "autoload": {
-        "psr-4": { "PSTPAGOFACIL/ApiClient\\" : "lib/" }
+        "psr-4": { "PSTPAGOFACIL\\ApiClient\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "PSTPAGOFACIL/ApiClient\\" : "test/" }
+        "psr-4": { "PSTPAGOFACIL\\ApiClient\\" : "test/" }
     }
 }

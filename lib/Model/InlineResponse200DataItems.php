@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL/ApiClient\Model;
+namespace PSTPAGOFACIL\ApiClient\Model;
 
 use \ArrayAccess;
-use \PSTPAGOFACIL/ApiClient\ObjectSerializer;
+use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
 
 /**
  * InlineResponse200DataItems Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -67,7 +67,7 @@ class InlineResponse200DataItems implements ModelInterface, ArrayAccess
         'is_total_nullified' => 'bool',
         'is_parcial_nullified' => 'bool',
         'currency' => 'string',
-        'document' => '\PSTPAGOFACIL/ApiClient\Model\InlineResponse200DataDocument'
+        'document' => '\PSTPAGOFACIL\ApiClient\Model\InlineResponse200DataDocument'
     ];
 
     /**
@@ -507,7 +507,7 @@ class InlineResponse200DataItems implements ModelInterface, ArrayAccess
     /**
      * Gets document
      *
-     * @return \PSTPAGOFACIL/ApiClient\Model\InlineResponse200DataDocument|null
+     * @return \PSTPAGOFACIL\ApiClient\Model\InlineResponse200DataDocument|null
      */
     public function getDocument()
     {
@@ -517,7 +517,7 @@ class InlineResponse200DataItems implements ModelInterface, ArrayAccess
     /**
      * Sets document
      *
-     * @param \PSTPAGOFACIL/ApiClient\Model\InlineResponse200DataDocument|null $document document
+     * @param \PSTPAGOFACIL\ApiClient\Model\InlineResponse200DataDocument|null $document document
      *
      * @return $this
      */

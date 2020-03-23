@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 **responce_code** | **int** | uso transbank | [optional] 
 **vci** | **string** | uso transbank | [optional] 
 **abonos** | **string[]** | Abonos relacionados a la transacción | [optional] 
-**status** | [**\PSTPAGOFACIL/ApiClient\Model\Status**](Status.md) |  | [optional] 
+**status** | [**\PSTPAGOFACIL\ApiClient\Model\Status**](Status.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

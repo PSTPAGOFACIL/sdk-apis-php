@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL/ApiClient\Model;
+namespace PSTPAGOFACIL\ApiClient\Model;
 
 use \ArrayAccess;
-use \PSTPAGOFACIL/ApiClient\ObjectSerializer;
+use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
 
 /**
  * LoginResponse Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL/ApiClient
+ * @package  PSTPAGOFACIL\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -59,7 +59,7 @@ class LoginResponse implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'message' => 'string',
         'error' => 'string',
-        'data' => '\PSTPAGOFACIL/ApiClient\Model\DataLoginResponse'
+        'data' => '\PSTPAGOFACIL\ApiClient\Model\DataLoginResponse'
     ];
 
     /**
@@ -267,7 +267,7 @@ class LoginResponse implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \PSTPAGOFACIL/ApiClient\Model\DataLoginResponse|null
+     * @return \PSTPAGOFACIL\ApiClient\Model\DataLoginResponse|null
      */
     public function getData()
     {
@@ -277,7 +277,7 @@ class LoginResponse implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \PSTPAGOFACIL/ApiClient\Model\DataLoginResponse|null $data data
+     * @param \PSTPAGOFACIL\ApiClient\Model\DataLoginResponse|null $data data
      *
      * @return $this
      */
