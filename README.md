@@ -1,4 +1,22 @@
-# OpenAPIClient-php
+<p align="center">
+  <a href="" rel="noopener">
+ <img height=200px src="https://s3-us-west-2.amazonaws.com/assets.pagofacil.cl/images/1-Logo_cuadrado.png" alt="Pago Fácil SpA Examples"></a>
+</p>
+
+<h3 align="center">@pstpagofacil/sdk-apis-php</h3>
+
+<div align="center">
+
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/PSTPAGOFACIL/sdk-apis-php.svg)](https://github.com/PSTPAGOFACIL/sdk-apis-php/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/PSTPAGOFACIL/sdk-apis-php.svg)](https://github.com/PSTPAGOFACIL/sdk-apis-php/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+</div>
+
+---
+
+# Pago Fácil APIs PHP SDK
 
 API de Pago Fácil
 
@@ -15,6 +33,12 @@ PHP 5.5 and later
 
 ### Composer
 
+#### Using Packagist
+
+
+
+#### Using GITHUB
+
 To install the bindings via [Composer](http://getcomposer.org/), add the following to `composer.json`:
 
 ```json
@@ -22,11 +46,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
+      "url": "https://github.com/PSTPAGOFACIL/sdk-apis-php.git"
     }
   ],
   "require": {
-    "GIT_USER_ID/GIT_REPO_ID": "*@dev"
+    "PSTPAGOFACIL/sdk-apis-php.git": "*@dev"
   }
 }
 ```
@@ -58,22 +82,20 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+$apiInstance = new PSTPagoFacil\ApiClient\Api\AuthApi();
+$loginParams = [
+    "username" => "mimaildeejemplo@pagofacil.cl",
+    "password" => "MiClavedeMentira!"
+];
 
-
-$apiInstance = new PSTPagoFacil\ApiClient\Api\AuthApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
-);
-$login_body = new \PSTPagoFacil\ApiClient\Model\LoginBody(); // \PSTPagoFacil\ApiClient\Model\LoginBody | 
+$body = new \PSTPagoFacil\ApiClient\Model\LoginBody($loginParams);
 
 try {
-    $result = $apiInstance->usersLoginPost($login_body);
+    $result = $apiInstance->usersLoginPost($body);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AuthApi->usersLoginPost: ', $e->getMessage(), PHP_EOL;
 }
-
 ?>
 ```
 
@@ -175,6 +197,6 @@ Class | Method | HTTP request | Description
 
 
 ## Author
-
+- Cristian Tala Sánchez
 
 
