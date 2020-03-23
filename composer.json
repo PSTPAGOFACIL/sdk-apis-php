@@ -23,9 +23,9 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "Pagofacil\\Client\\" : "lib/" }
+        "psr-4": { "Swagger\\Client\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "Pagofacil\\Client\\" : "test/" }
+        "psr-4": { "Swagger\\Client\\" : "test/" }
     }
 }
