@@ -2,6 +2,7 @@
     "name": "pstpagofacil/sdk-apis-php",
     "type": "library",
     "license": "MIT",
+    "version": "2.1.5",
     "authors": [
         {
             "name": "Cristian Tala",
