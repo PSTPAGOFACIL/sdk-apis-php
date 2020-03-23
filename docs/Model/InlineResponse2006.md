@@ -1,7 +1,6 @@
-# # InlineResponse2006
+# InlineResponse2006
 
 ## Properties
-
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | Identificador del usuario | 
@@ -13,5 +12,4 @@ Name | Type | Description | Notes
 **created_at** | **string** | Fecha de creacion del usuario | 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
 

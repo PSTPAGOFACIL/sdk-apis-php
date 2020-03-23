@@ -1,33 +1,28 @@
-# OpenAPI\Client\UsersApi
+# Swagger\Client\UsersApi
 
 All URIs are relative to *https://apis.pgf.cl*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**usersGet**](UsersApi.md#usersGet) | **GET** /users | Obtener informacion del usuario.
+[**usersGet**](UsersApi.md#usersget) | **GET** /users | Obtener informacion del usuario.
 
-
-
-## usersGet
-
-> \OpenAPI\Client\Model\InlineResponse2006 usersGet()
+# **usersGet**
+> \Swagger\Client\Model\InlineResponse2006 usersGet()
 
 Obtener informacion del usuario.
 
 Este endpoint retorna la informacion del usuario.
 
 ### Example
-
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+    // Configure HTTP bearer authorization: JWTToken
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-// Configure Bearer (JWT) authorization: JWTToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
-
-
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new Swagger\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -44,12 +39,11 @@ try {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2006**](../Model/InlineResponse2006.md)
+[**\Swagger\Client\Model\InlineResponse2006**](../Model/InlineResponse2006.md)
 
 ### Authorization
 
@@ -57,10 +51,8 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
-[[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

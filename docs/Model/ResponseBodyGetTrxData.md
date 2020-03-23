@@ -1,32 +1,30 @@
-# # ResponseBodyGetTrxData
+# ResponseBodyGetTrxData
 
 ## Properties
-
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id_trx** | **int** | ID de la transacción en Pago Fácil | [optional] 
-**id_service** | **int** | ID del servicio | [optional] 
-**order_id_tienda** | **string** | ID del comercio para identificar su tienda | [optional] 
-**amount** | **float** | Monto de la transacción | [optional] 
-**cost** | **float** | Costo de la transacción | [optional] 
-**email** | **string** | Email | [optional] 
-**auth_code** | **int** | Codigo de autorizacion de la compra | [optional] 
-**created_at** | [**\DateTime**](\DateTime.md) | Fecha de creación | [optional] 
-**updated_at** | [**\DateTime**](\DateTime.md) | Fecha de actualización | [optional] 
-**callback_url** | **string** | url a la que se llama una vez la transacción es completada | [optional] 
-**complete_url** | **string** | url a la que se redireciona al cliente una vez la transacción es completada | [optional] 
-**cancel_url** | **string** | currently out of order | [optional] 
-**ip** | **string** | ip adress of the device from where transaction was completed | [optional] 
-**browser_data** | **string** | data from the browser where the transaction was completed | [optional] 
-**source** | **string** | Método de pago | [optional] 
-**timestamp** | **string** | uso transbank | [optional] 
-**payment_type_code** | **string** | Forma de pago que usa el cliente | [optional] 
-**shares_number** | **int** | Cuotas de la transacción | [optional] 
-**responce_code** | **int** | uso transbank | [optional] 
-**vci** | **string** | uso transbank | [optional] 
-**abonos** | **string[]** | Abonos relacionados a la transacción | [optional] 
-**status** | [**\OpenAPI\Client\Model\Status**](Status.md) |  | [optional] 
+**id_trx** | [**\Swagger\Client\Model\IdTrx**](IdTrx.md) |  | [optional] 
+**id_service** | [**\Swagger\Client\Model\IdService**](IdService.md) |  | [optional] 
+**order_id_tienda** | [**\Swagger\Client\Model\IdTienda**](IdTienda.md) |  | [optional] 
+**amount** | [**\Swagger\Client\Model\Amount**](Amount.md) |  | [optional] 
+**cost** | [**\Swagger\Client\Model\Cost**](Cost.md) |  | [optional] 
+**email** | [**\Swagger\Client\Model\Email**](Email.md) |  | [optional] 
+**auth_code** | [**\Swagger\Client\Model\AuthCode**](AuthCode.md) |  | [optional] 
+**created_at** | [**\Swagger\Client\Model\CreatedAt**](CreatedAt.md) |  | [optional] 
+**updated_at** | [**\Swagger\Client\Model\UpdatedAt**](UpdatedAt.md) |  | [optional] 
+**callback_url** | [**\Swagger\Client\Model\CallbackURL**](CallbackURL.md) |  | [optional] 
+**complete_url** | [**\Swagger\Client\Model\CompleteURL**](CompleteURL.md) |  | [optional] 
+**cancel_url** | [**\Swagger\Client\Model\CancelURL**](CancelURL.md) |  | [optional] 
+**ip** | [**\Swagger\Client\Model\Ip**](Ip.md) |  | [optional] 
+**browser_data** | [**\Swagger\Client\Model\BrowserData**](BrowserData.md) |  | [optional] 
+**source** | [**\Swagger\Client\Model\Source**](Source.md) |  | [optional] 
+**timestamp** | [**\Swagger\Client\Model\Timestamp**](Timestamp.md) |  | [optional] 
+**payment_type_code** | [**\Swagger\Client\Model\PaymentTypeCode**](PaymentTypeCode.md) |  | [optional] 
+**shares_number** | [**\Swagger\Client\Model\SharesNumber**](SharesNumber.md) |  | [optional] 
+**responce_code** | [**\Swagger\Client\Model\ResponceCode**](ResponceCode.md) |  | [optional] 
+**vci** | [**\Swagger\Client\Model\Vci**](Vci.md) |  | [optional] 
+**abonos** | [**\Swagger\Client\Model\Abonos**](Abonos.md) |  | [optional] 
+**status** | [**\Swagger\Client\Model\Status**](Status.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
 

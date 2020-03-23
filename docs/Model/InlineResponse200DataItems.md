@@ -1,7 +1,6 @@
-# # InlineResponse200DataItems
+# InlineResponse200DataItems
 
 ## Properties
-
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **amount** | **float** |  | [optional] 
@@ -9,13 +8,12 @@ Name | Type | Description | Notes
 **total** | **float** |  | [optional] 
 **id_trx** | **float** |  | [optional] 
 **order_id_tienda** | **string** |  | [optional] 
-**created_at** | **int** | Timestamp de unix en milisegundos | [optional] 
+**created_at** | [**\Swagger\Client\Model\TimestampUnixMilisecond**](TimestampUnixMilisecond.md) |  | [optional] 
 **date_time_created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **is_total_nullified** | **bool** |  | [optional] 
 **is_parcial_nullified** | **bool** |  | [optional] 
-**currency** | **string** |  | [optional] 
-**document** | [**\OpenAPI\Client\Model\InlineResponse200DataDocument**](InlineResponse200DataDocument.md) |  | [optional] 
+**currency** | [****](.md) |  | [optional] 
+**document** | [**\Swagger\Client\Model\InlineResponse200DataDocument**](InlineResponse200DataDocument.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
 

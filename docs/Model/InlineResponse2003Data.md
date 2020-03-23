@@ -1,11 +1,9 @@
-# # InlineResponse2003Data
+# InlineResponse2003Data
 
 ## Properties
-
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**status** | [**\OpenAPI\Client\Model\NullificationStatus**](NullificationStatus.md) |  | [optional] 
+**status** | [**\Swagger\Client\Model\NullificationStatus**](NullificationStatus.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
 

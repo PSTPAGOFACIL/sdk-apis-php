@@ -1,13 +1,31 @@
 {
     "name": "pstpagofacil/sdk-apis-php",
-    "type": "library",
-    "license": "MIT",
     "version": "2.1.5",
-    "authors": [
-        {
-            "name": "Cristian Tala",
-            "email": "yomismo@cristiantala.cl"
-        }
+    "description": "",
+    "keywords": [
+        "pagofacil",
+        "php",
+        "sdk",
+        "api"
     ],
-    "require": {}
+    "homepage": "https://pagofacil.cl",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "squizlabs/php_codesniffer": "~2.6",
+        "friendsofphp/php-cs-fixer": "~1.12"
+    },
+    "autoload": {
+        "psr-4": { "Pagofacil\\Client\\" : "lib/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Pagofacil\\Client\\" : "test/" }
+    }
 }
