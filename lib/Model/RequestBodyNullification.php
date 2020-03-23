@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL\ApiClient\Model;
+namespace PSTPagoFacil\ApiClient\Model;
 
 use \ArrayAccess;
-use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
+use \PSTPagoFacil\ApiClient\ObjectSerializer;
 
 /**
  * RequestBodyNullification Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,7 +58,7 @@ class RequestBodyNullification implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'amount' => 'float',
-        'type' => '\PSTPAGOFACIL\ApiClient\Model\NullificationType',
+        'type' => '\PSTPagoFacil\ApiClient\Model\NullificationType',
         'nullify_tbk' => 'bool'
     ];
 
@@ -249,7 +249,7 @@ class RequestBodyNullification implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \PSTPAGOFACIL\ApiClient\Model\NullificationType
+     * @return \PSTPagoFacil\ApiClient\Model\NullificationType
      */
     public function getType()
     {
@@ -259,7 +259,7 @@ class RequestBodyNullification implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \PSTPAGOFACIL\ApiClient\Model\NullificationType $type type
+     * @param \PSTPagoFacil\ApiClient\Model\NullificationType $type type
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# PSTPAGOFACIL\ApiClient\WebhooksApi
+# PSTPagoFacil\ApiClient\WebhooksApi
 
 All URIs are relative to *https://apis.pgf.cl*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 ## webhooksIdUserGet
 
-> \PSTPAGOFACIL\ApiClient\Model\InlineResponse2004 webhooksIdUserGet($id_user)
+> \PSTPagoFacil\ApiClient\Model\InlineResponse2004 webhooksIdUserGet($id_user)
 
 
 
@@ -26,7 +26,7 @@ Obtiene la lista de webhooks de un usuario.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new PSTPAGOFACIL\ApiClient\Api\WebhooksApi(
+$apiInstance = new PSTPagoFacil\ApiClient\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\PSTPAGOFACIL\ApiClient\Model\InlineResponse2004**](../Model/InlineResponse2004.md)
+[**\PSTPagoFacil\ApiClient\Model\InlineResponse2004**](../Model/InlineResponse2004.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 
 ## webhooksIdUserWebhookDelete
 
-> \PSTPAGOFACIL\ApiClient\Model\InlineResponse201 webhooksIdUserWebhookDelete($id_user, $webhook)
+> \PSTPagoFacil\ApiClient\Model\InlineResponse201 webhooksIdUserWebhookDelete($id_user, $webhook)
 
 
 
@@ -82,7 +82,7 @@ Elimina un webhook del usuario y tipo especificados
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new PSTPAGOFACIL\ApiClient\Api\WebhooksApi(
+$apiInstance = new PSTPagoFacil\ApiClient\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\PSTPAGOFACIL\ApiClient\Model\InlineResponse201**](../Model/InlineResponse201.md)
+[**\PSTPagoFacil\ApiClient\Model\InlineResponse201**](../Model/InlineResponse201.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ No authorization required
 
 ## webhooksIdUserWebhookPut
 
-> \PSTPAGOFACIL\ApiClient\Model\InlineResponse201 webhooksIdUserWebhookPut($id_user, $webhook, $inline_object)
+> \PSTPagoFacil\ApiClient\Model\InlineResponse201 webhooksIdUserWebhookPut($id_user, $webhook, $inline_object)
 
 
 
@@ -140,14 +140,14 @@ Actualiza un webhook para tus servicios.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new PSTPAGOFACIL\ApiClient\Api\WebhooksApi(
+$apiInstance = new PSTPagoFacil\ApiClient\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $id_user = 123; // string | ID del usuario a consultar
 $webhook = remittances; // string | Tipo de evento del webhook
-$inline_object = new \PSTPAGOFACIL\ApiClient\Model\InlineObject(); // \PSTPAGOFACIL\ApiClient\Model\InlineObject | 
+$inline_object = new \PSTPagoFacil\ApiClient\Model\InlineObject(); // \PSTPagoFacil\ApiClient\Model\InlineObject | 
 
 try {
     $result = $apiInstance->webhooksIdUserWebhookPut($id_user, $webhook, $inline_object);
@@ -165,11 +165,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id_user** | **string**| ID del usuario a consultar |
  **webhook** | **string**| Tipo de evento del webhook |
- **inline_object** | [**\PSTPAGOFACIL\ApiClient\Model\InlineObject**](../Model/InlineObject.md)|  | [optional]
+ **inline_object** | [**\PSTPagoFacil\ApiClient\Model\InlineObject**](../Model/InlineObject.md)|  | [optional]
 
 ### Return type
 
-[**\PSTPAGOFACIL\ApiClient\Model\InlineResponse201**](../Model/InlineResponse201.md)
+[**\PSTPagoFacil\ApiClient\Model\InlineResponse201**](../Model/InlineResponse201.md)
 
 ### Authorization
 
@@ -187,7 +187,7 @@ No authorization required
 
 ## webhooksPost
 
-> \PSTPAGOFACIL\ApiClient\Model\InlineResponse201 webhooksPost($request_body_webhook)
+> \PSTPagoFacil\ApiClient\Model\InlineResponse201 webhooksPost($request_body_webhook)
 
 
 
@@ -200,12 +200,12 @@ Crea un webhook para tus servicios. <br> Se enviará un POST a esta URL cuando s
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new PSTPAGOFACIL\ApiClient\Api\WebhooksApi(
+$apiInstance = new PSTPagoFacil\ApiClient\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$request_body_webhook = new \PSTPAGOFACIL\ApiClient\Model\RequestBodyWebhook(); // \PSTPAGOFACIL\ApiClient\Model\RequestBodyWebhook | 
+$request_body_webhook = new \PSTPagoFacil\ApiClient\Model\RequestBodyWebhook(); // \PSTPagoFacil\ApiClient\Model\RequestBodyWebhook | 
 
 try {
     $result = $apiInstance->webhooksPost($request_body_webhook);
@@ -221,11 +221,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request_body_webhook** | [**\PSTPAGOFACIL\ApiClient\Model\RequestBodyWebhook**](../Model/RequestBodyWebhook.md)|  | [optional]
+ **request_body_webhook** | [**\PSTPagoFacil\ApiClient\Model\RequestBodyWebhook**](../Model/RequestBodyWebhook.md)|  | [optional]
 
 ### Return type
 
-[**\PSTPAGOFACIL\ApiClient\Model\InlineResponse201**](../Model/InlineResponse201.md)
+[**\PSTPagoFacil\ApiClient\Model\InlineResponse201**](../Model/InlineResponse201.md)
 
 ### Authorization
 

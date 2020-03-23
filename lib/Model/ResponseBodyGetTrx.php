@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL\ApiClient\Model;
+namespace PSTPagoFacil\ApiClient\Model;
 
 use \ArrayAccess;
-use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
+use \PSTPagoFacil\ApiClient\ObjectSerializer;
 
 /**
  * ResponseBodyGetTrx Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,7 +58,7 @@ class ResponseBodyGetTrx implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'message' => 'string',
-        'data' => '\PSTPAGOFACIL\ApiClient\Model\ResponseBodyGetTrxData'
+        'data' => '\PSTPagoFacil\ApiClient\Model\ResponseBodyGetTrxData'
     ];
 
     /**
@@ -237,7 +237,7 @@ class ResponseBodyGetTrx implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \PSTPAGOFACIL\ApiClient\Model\ResponseBodyGetTrxData|null
+     * @return \PSTPagoFacil\ApiClient\Model\ResponseBodyGetTrxData|null
      */
     public function getData()
     {
@@ -247,7 +247,7 @@ class ResponseBodyGetTrx implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \PSTPAGOFACIL\ApiClient\Model\ResponseBodyGetTrxData|null $data data
+     * @param \PSTPagoFacil\ApiClient\Model\ResponseBodyGetTrxData|null $data data
      *
      * @return $this
      */

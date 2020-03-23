@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL\ApiClient\Model;
+namespace PSTPagoFacil\ApiClient\Model;
 
 use \ArrayAccess;
-use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
+use \PSTPagoFacil\ApiClient\ObjectSerializer;
 
 /**
  * InlineResponse200 Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,7 +58,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'message' => 'string',
-        'data' => '\PSTPAGOFACIL\ApiClient\Model\InlineResponse200Data'
+        'data' => '\PSTPagoFacil\ApiClient\Model\InlineResponse200Data'
     ];
 
     /**
@@ -237,7 +237,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \PSTPAGOFACIL\ApiClient\Model\InlineResponse200Data|null
+     * @return \PSTPagoFacil\ApiClient\Model\InlineResponse200Data|null
      */
     public function getData()
     {
@@ -247,7 +247,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \PSTPAGOFACIL\ApiClient\Model\InlineResponse200Data|null $data data
+     * @param \PSTPagoFacil\ApiClient\Model\InlineResponse200Data|null $data data
      *
      * @return $this
      */

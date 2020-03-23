@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL\ApiClient\Model;
+namespace PSTPagoFacil\ApiClient\Model;
 
 use \ArrayAccess;
-use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
+use \PSTPagoFacil\ApiClient\ObjectSerializer;
 
 /**
  * InlineResponse200Data Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,10 +58,10 @@ class InlineResponse200Data implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'total_remittances' => 'int',
-        'items' => '\PSTPAGOFACIL\ApiClient\Model\InlineResponse200DataItems[]',
+        'items' => '\PSTPagoFacil\ApiClient\Model\InlineResponse200DataItems[]',
         'total_transactions' => 'int',
         'total_nullification' => 'int',
-        'nullifications' => '\PSTPAGOFACIL\ApiClient\Model\InlineResponse200DataNullifications[]'
+        'nullifications' => '\PSTPagoFacil\ApiClient\Model\InlineResponse200DataNullifications[]'
     ];
 
     /**
@@ -255,7 +255,7 @@ class InlineResponse200Data implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \PSTPAGOFACIL\ApiClient\Model\InlineResponse200DataItems[]|null
+     * @return \PSTPagoFacil\ApiClient\Model\InlineResponse200DataItems[]|null
      */
     public function getItems()
     {
@@ -265,7 +265,7 @@ class InlineResponse200Data implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \PSTPAGOFACIL\ApiClient\Model\InlineResponse200DataItems[]|null $items items
+     * @param \PSTPagoFacil\ApiClient\Model\InlineResponse200DataItems[]|null $items items
      *
      * @return $this
      */
@@ -327,7 +327,7 @@ class InlineResponse200Data implements ModelInterface, ArrayAccess
     /**
      * Gets nullifications
      *
-     * @return \PSTPAGOFACIL\ApiClient\Model\InlineResponse200DataNullifications[]|null
+     * @return \PSTPagoFacil\ApiClient\Model\InlineResponse200DataNullifications[]|null
      */
     public function getNullifications()
     {
@@ -337,7 +337,7 @@ class InlineResponse200Data implements ModelInterface, ArrayAccess
     /**
      * Sets nullifications
      *
-     * @param \PSTPAGOFACIL\ApiClient\Model\InlineResponse200DataNullifications[]|null $nullifications nullifications
+     * @param \PSTPagoFacil\ApiClient\Model\InlineResponse200DataNullifications[]|null $nullifications nullifications
      *
      * @return $this
      */

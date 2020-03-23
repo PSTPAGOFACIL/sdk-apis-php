@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PSTPAGOFACIL\ApiClient;
+namespace PSTPagoFacil\ApiClient;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description ResponseBodyGetTrxData
- * @package     PSTPAGOFACIL\ApiClient
+ * @package     PSTPagoFacil\ApiClient
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

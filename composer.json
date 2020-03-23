@@ -1,5 +1,5 @@
 {
-    "name": "PSTPAGOFACIL/sdk-apis-php",
+    "name": "pstpagofacil/sdk-apis-php",
     "description": "API de Pago Fácil",
     "keywords": [
         "pagofacil",
@@ -29,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "~2.12"
     },
     "autoload": {
-        "psr-4": { "PSTPAGOFACIL\\ApiClient\\" : "lib/" }
+        "psr-4": { "PSTPagoFacil\\ApiClient\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "PSTPAGOFACIL\\ApiClient\\" : "test/" }
+        "psr-4": { "PSTPagoFacil\\ApiClient\\" : "test/" }
     }
 }

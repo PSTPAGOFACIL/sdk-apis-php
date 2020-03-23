@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,18 +26,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace PSTPAGOFACIL\ApiClient;
+namespace PSTPagoFacil\ApiClient;
 
-use \PSTPAGOFACIL\ApiClient\Configuration;
-use \PSTPAGOFACIL\ApiClient\ApiException;
-use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
+use \PSTPagoFacil\ApiClient\Configuration;
+use \PSTPagoFacil\ApiClient\ApiException;
+use \PSTPagoFacil\ApiClient\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * AuthApiTest Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

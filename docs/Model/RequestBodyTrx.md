@@ -15,9 +15,9 @@ Name | Type | Description | Notes
 **x_shop_country** | **string** | Codigo de 2 caracteres para paises. &lt;br&gt;&lt;br&gt; Info:&lt;a href&#x3D;&#39;https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes&#39;&gt;ISO 3166-1 Alpha2-code&lt;/a&gt; | 
 **x_session_id** | **string** | Identificador único de la sesión del usuario que realiza el pago. Se agrega como capa de seguridad para validar la transacción. Max. 61 caracteres. | 
 **x_products** | **object[]** | Productos asociados a la transacción | [optional] 
-**x_billing_details** | [**\PSTPAGOFACIL\ApiClient\Model\BillingDetails**](BillingDetails.md) |  | [optional] 
-**x_shippment** | [**\PSTPAGOFACIL\ApiClient\Model\Shippment**](Shippment.md) |  | [optional] 
-**x_document** | [**\PSTPAGOFACIL\ApiClient\Model\Document**](Document.md) |  | [optional] 
+**x_billing_details** | [**\PSTPagoFacil\ApiClient\Model\BillingDetails**](BillingDetails.md) |  | [optional] 
+**x_shippment** | [**\PSTPagoFacil\ApiClient\Model\Shippment**](Shippment.md) |  | [optional] 
+**x_document** | [**\PSTPagoFacil\ApiClient\Model\Document**](Document.md) |  | [optional] 
 **x_signature** | **string** | Mensaje Firmado. Para más información sobre la creación de la firma revisa https://developers.pagofacil.cl/docs/cómo-funciona-el-proceso-de-firmado | 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL\ApiClient\Api;
+namespace PSTPagoFacil\ApiClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use PSTPAGOFACIL\ApiClient\ApiException;
-use PSTPAGOFACIL\ApiClient\Configuration;
-use PSTPAGOFACIL\ApiClient\HeaderSelector;
-use PSTPAGOFACIL\ApiClient\ObjectSerializer;
+use PSTPagoFacil\ApiClient\ApiException;
+use PSTPagoFacil\ApiClient\Configuration;
+use PSTPagoFacil\ApiClient\HeaderSelector;
+use PSTPagoFacil\ApiClient\ObjectSerializer;
 
 /**
  * IndicatorsApi Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -126,9 +126,9 @@ class IndicatorsApi
      * @param  \DateTime $remittance_by_date Fecha de la que se desea obtener información del abono (optional)
      * @param  bool $future_remittances Define si se desea obtener los abonos futuros (optional)
      *
-     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
+     * @throws \PSTPagoFacil\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \PSTPAGOFACIL\ApiClient\Model\ResponseBodyRemittances|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400|\PSTPAGOFACIL\ApiClient\Model\InlineResponse403|\PSTPAGOFACIL\ApiClient\Model\InlineResponse404
+     * @return \PSTPagoFacil\ApiClient\Model\ResponseBodyRemittances|\PSTPagoFacil\ApiClient\Model\InlineResponse400|\PSTPagoFacil\ApiClient\Model\InlineResponse403|\PSTPagoFacil\ApiClient\Model\InlineResponse404
      */
     public function indicatorsRemittancesGet($id_user = null, $id_trx = null, $available_balance = null, $remittance_by_date = null, $future_remittances = null)
     {
@@ -147,9 +147,9 @@ class IndicatorsApi
      * @param  \DateTime $remittance_by_date Fecha de la que se desea obtener información del abono (optional)
      * @param  bool $future_remittances Define si se desea obtener los abonos futuros (optional)
      *
-     * @throws \PSTPAGOFACIL\ApiClient\ApiException on non-2xx response
+     * @throws \PSTPagoFacil\ApiClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \PSTPAGOFACIL\ApiClient\Model\ResponseBodyRemittances|\PSTPAGOFACIL\ApiClient\Model\InlineResponse400|\PSTPAGOFACIL\ApiClient\Model\InlineResponse403|\PSTPAGOFACIL\ApiClient\Model\InlineResponse404, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PSTPagoFacil\ApiClient\Model\ResponseBodyRemittances|\PSTPagoFacil\ApiClient\Model\InlineResponse400|\PSTPagoFacil\ApiClient\Model\InlineResponse403|\PSTPagoFacil\ApiClient\Model\InlineResponse404, HTTP status code, HTTP response headers (array of strings)
      */
     public function indicatorsRemittancesGetWithHttpInfo($id_user = null, $id_trx = null, $available_balance = null, $remittance_by_date = null, $future_remittances = null)
     {
@@ -186,56 +186,56 @@ class IndicatorsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\PSTPAGOFACIL\ApiClient\Model\ResponseBodyRemittances' === '\SplFileObject') {
+                    if ('\PSTPagoFacil\ApiClient\Model\ResponseBodyRemittances' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\ResponseBodyRemittances', []),
+                        ObjectSerializer::deserialize($content, '\PSTPagoFacil\ApiClient\Model\ResponseBodyRemittances', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse400' === '\SplFileObject') {
+                    if ('\PSTPagoFacil\ApiClient\Model\InlineResponse400' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400', []),
+                        ObjectSerializer::deserialize($content, '\PSTPagoFacil\ApiClient\Model\InlineResponse400', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse403' === '\SplFileObject') {
+                    if ('\PSTPagoFacil\ApiClient\Model\InlineResponse403' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse403', []),
+                        ObjectSerializer::deserialize($content, '\PSTPagoFacil\ApiClient\Model\InlineResponse403', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\PSTPAGOFACIL\ApiClient\Model\InlineResponse404' === '\SplFileObject') {
+                    if ('\PSTPagoFacil\ApiClient\Model\InlineResponse404' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PSTPAGOFACIL\ApiClient\Model\InlineResponse404', []),
+                        ObjectSerializer::deserialize($content, '\PSTPagoFacil\ApiClient\Model\InlineResponse404', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\PSTPAGOFACIL\ApiClient\Model\ResponseBodyRemittances';
+            $returnType = '\PSTPagoFacil\ApiClient\Model\ResponseBodyRemittances';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -254,7 +254,7 @@ class IndicatorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL\ApiClient\Model\ResponseBodyRemittances',
+                        '\PSTPagoFacil\ApiClient\Model\ResponseBodyRemittances',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -262,7 +262,7 @@ class IndicatorsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse400',
+                        '\PSTPagoFacil\ApiClient\Model\InlineResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -270,7 +270,7 @@ class IndicatorsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse403',
+                        '\PSTPagoFacil\ApiClient\Model\InlineResponse403',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -278,7 +278,7 @@ class IndicatorsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PSTPAGOFACIL\ApiClient\Model\InlineResponse404',
+                        '\PSTPagoFacil\ApiClient\Model\InlineResponse404',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -328,7 +328,7 @@ class IndicatorsApi
      */
     public function indicatorsRemittancesGetAsyncWithHttpInfo($id_user = null, $id_trx = null, $available_balance = null, $remittance_by_date = null, $future_remittances = null)
     {
-        $returnType = '\PSTPAGOFACIL\ApiClient\Model\ResponseBodyRemittances';
+        $returnType = '\PSTPagoFacil\ApiClient\Model\ResponseBodyRemittances';
         $request = $this->indicatorsRemittancesGetRequest($id_user, $id_trx, $available_balance, $remittance_by_date, $future_remittances);
 
         return $this->client

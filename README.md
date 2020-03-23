@@ -60,12 +60,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new PSTPAGOFACIL\ApiClient\Api\AuthApi(
+$apiInstance = new PSTPagoFacil\ApiClient\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$login_body = new \PSTPAGOFACIL\ApiClient\Model\LoginBody(); // \PSTPAGOFACIL\ApiClient\Model\LoginBody | 
+$login_body = new \PSTPagoFacil\ApiClient\Model\LoginBody(); // \PSTPagoFacil\ApiClient\Model\LoginBody | 
 
 try {
     $result = $apiInstance->usersLoginPost($login_body);

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace PSTPAGOFACIL\ApiClient\Model;
+namespace PSTPagoFacil\ApiClient\Model;
 
 use \ArrayAccess;
-use \PSTPAGOFACIL\ApiClient\ObjectSerializer;
+use \PSTPagoFacil\ApiClient\ObjectSerializer;
 
 /**
  * ResponseBodyRemittancesData Class Doc Comment
  *
  * @category Class
- * @package  PSTPAGOFACIL\ApiClient
+ * @package  PSTPagoFacil\ApiClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,8 +58,8 @@ class ResponseBodyRemittancesData implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'available_balance' => 'float',
-        'remittance_by_date' => '\PSTPAGOFACIL\ApiClient\Model\RemittanceByDate',
-        'future_remittances' => '\PSTPAGOFACIL\ApiClient\Model\FutureRemittances'
+        'remittance_by_date' => '\PSTPagoFacil\ApiClient\Model\RemittanceByDate',
+        'future_remittances' => '\PSTPagoFacil\ApiClient\Model\FutureRemittances'
     ];
 
     /**
@@ -243,7 +243,7 @@ class ResponseBodyRemittancesData implements ModelInterface, ArrayAccess
     /**
      * Gets remittance_by_date
      *
-     * @return \PSTPAGOFACIL\ApiClient\Model\RemittanceByDate|null
+     * @return \PSTPagoFacil\ApiClient\Model\RemittanceByDate|null
      */
     public function getRemittanceByDate()
     {
@@ -253,7 +253,7 @@ class ResponseBodyRemittancesData implements ModelInterface, ArrayAccess
     /**
      * Sets remittance_by_date
      *
-     * @param \PSTPAGOFACIL\ApiClient\Model\RemittanceByDate|null $remittance_by_date remittance_by_date
+     * @param \PSTPagoFacil\ApiClient\Model\RemittanceByDate|null $remittance_by_date remittance_by_date
      *
      * @return $this
      */
@@ -267,7 +267,7 @@ class ResponseBodyRemittancesData implements ModelInterface, ArrayAccess
     /**
      * Gets future_remittances
      *
-     * @return \PSTPAGOFACIL\ApiClient\Model\FutureRemittances|null
+     * @return \PSTPagoFacil\ApiClient\Model\FutureRemittances|null
      */
     public function getFutureRemittances()
     {
@@ -277,7 +277,7 @@ class ResponseBodyRemittancesData implements ModelInterface, ArrayAccess
     /**
      * Sets future_remittances
      *
-     * @param \PSTPAGOFACIL\ApiClient\Model\FutureRemittances|null $future_remittances future_remittances
+     * @param \PSTPagoFacil\ApiClient\Model\FutureRemittances|null $future_remittances future_remittances
      *
      * @return $this
      */

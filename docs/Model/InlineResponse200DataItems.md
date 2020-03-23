@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **is_total_nullified** | **bool** |  | [optional] 
 **is_parcial_nullified** | **bool** |  | [optional] 
 **currency** | **string** |  | [optional] 
-**document** | [**\PSTPAGOFACIL\ApiClient\Model\InlineResponse200DataDocument**](InlineResponse200DataDocument.md) |  | [optional] 
+**document** | [**\PSTPagoFacil\ApiClient\Model\InlineResponse200DataDocument**](InlineResponse200DataDocument.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

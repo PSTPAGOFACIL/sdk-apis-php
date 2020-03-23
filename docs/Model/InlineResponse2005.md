@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**types** | [**\PSTPAGOFACIL\ApiClient\Model\InlineResponse2005Types[]**](InlineResponse2005Types.md) |  | [optional] 
+**types** | [**\PSTPagoFacil\ApiClient\Model\InlineResponse2005Types[]**](InlineResponse2005Types.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
