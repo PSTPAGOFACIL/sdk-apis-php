@@ -1,10 +1,12 @@
-# InlineResponse4011
+# # InlineResponse4011
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**message** | [**\Swagger\Client\Model\Message**](Message.md) |  | [optional] 
-**errors** | [**\Swagger\Client\Model\Errors**](Errors.md) |  | [optional] 
+**message** | **string** | Mensaje de respuesta | [optional] 
+**errors** | **string[]** |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+
 

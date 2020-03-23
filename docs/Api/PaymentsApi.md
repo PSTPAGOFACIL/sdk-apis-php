@@ -1,29 +1,34 @@
-# Swagger\Client\PaymentsApi
+# PSTPAGOFACIL/ApiClient\PaymentsApi
 
 All URIs are relative to *https://apis.pgf.cl*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**paymentsGet**](PaymentsApi.md#paymentsget) | **GET** /payments | 
+[**paymentsGet**](PaymentsApi.md#paymentsGet) | **GET** /payments | 
 
-# **paymentsGet**
-> \Swagger\Client\Model\InlineResponse2005 paymentsGet($authorization)
+
+
+## paymentsGet
+
+> \PSTPAGOFACIL/ApiClient\Model\InlineResponse2005 paymentsGet($authorization)
 
 
 
 Obtiene los medios de pago disponible
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\PaymentsApi(
+
+$apiInstance = new PSTPAGOFACIL/ApiClient\Api\PaymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$authorization = "authorization_example"; // string | 
+$authorization = 'authorization_example'; // string | 
 
 try {
     $result = $apiInstance->paymentsGet($authorization);
@@ -36,13 +41,14 @@ try {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **authorization** | **string**|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
+[**\PSTPAGOFACIL/ApiClient\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
 
 ### Authorization
 
@@ -50,8 +56,10 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to README]](../../README.md)
 

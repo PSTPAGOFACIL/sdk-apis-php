@@ -1,6 +1,7 @@
-# InlineResponse2005Types
+# # InlineResponse2005Types
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **codigo** | **string** |  | [optional] 
@@ -9,4 +10,5 @@ Name | Type | Description | Notes
 **url_imagen** | **string** |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+
 

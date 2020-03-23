@@ -1,11 +1,13 @@
-# InlineResponse2004
+# # InlineResponse2004
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **message** | **string** |  | [optional] 
-**errors** | [**null[]**](.md) |  | [optional] 
-**data** | [**\Swagger\Client\Model\InlineResponse2004Data[]**](InlineResponse2004Data.md) |  | [optional] 
+**errors** | **object[]** |  | [optional] 
+**data** | **object[]** |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+
 
